@@ -6,15 +6,33 @@
 </head>
 <body>
     <script>
-        function getMessage(name) {
-            return 'Hello, ' + name + '...';
+        const NAME = 'Jeong Hoon';
+        const AGE = '25';
+        const STUDENT_ID = '2019109272';
+
+        function getName(name) {
+            return `제 이름은 ${name}입니다.`;
         }
-        const message = getMessage('Ornella');
-        document.write(message);
-        
-        setTimeout(
-            () => { document.write('...Hello again!')},
-        2000 );
+
+        function getAge(age) {
+            return `나이는 ${age}살 입니다.`;
+        }
+
+        function getStudentId(studentId) {
+            return `학번은 ${studentId}입니다.`;
+        }
+
+        setInterval(() => {
+            setTimeout(() => {
+                document.write(getName(NAME) + '<br>');
+            }, 1000);
+            setTimeout(() => {
+                document.write(getAge(AGE) + '<br>');
+            }, 2000);
+            setTimeout(() => {
+                document.write(getStudentId(STUDENT_ID) + '<br>');
+            }, 3000);
+        }, 3000);
     </script>
 </body>
 </html>
