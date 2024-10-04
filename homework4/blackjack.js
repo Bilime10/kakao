@@ -8,9 +8,11 @@ const rl = readline.createInterface({
 let player = []
 let bank = []
 
+// Bank의 카드를 먼저 1장 뽑습니다.
 bank.push(Math.floor(Math.random() * 11) + 1)
 console.log(`Bank의 첫번째 카드는 ${bank} 입니다.`)
 
+// 사용자의 카드 전체를 뽑는 함수입니다.
 function drawCard() {
     player.push(Math.floor(Math.random() * 11) + 1)
 
@@ -34,11 +36,13 @@ function drawCard() {
         else {
             console.log(`Player의 카드는 ${player} 입니다.`)
             rl.close()
+            // 사용자 카드 뽑기가 완료되면 딜러의 카드를 뽑습니다.
             drawBankCard()
         }
     })
 }
 
+//Bank의 카드 전체를 뽑는 함수입니다.
 function drawBankCard() {
     console.log("Bank의 카드를 뽑겠습니다.");
 
@@ -63,4 +67,5 @@ function drawBankCard() {
     }
 }
 
+// 사용자의 카드를 뽑습니다.
 drawCard()
