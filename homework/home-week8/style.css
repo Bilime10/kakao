@@ -1,8 +1,7 @@
-/* Reset some default styles */
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  background-color: #e6e6fa; /* Light lavender background */
+  background-color: #e6e6fa;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,18 +11,17 @@ body {
 
 h1 {
   font-size: 2.5rem;
-  color: #4b0082; /* Indigo color */
+  color: #4b0082;
   margin-bottom: 10px;
 }
 
 p {
-  color: #483d8b; /* Dark slate blue */
+  color: #483d8b;
   font-size: 1.2rem;
 }
 
-/* Container styling */
 .head {
-  background-color: #6a5acd; /* Slate blue */
+  background-color: #6a5acd;
   color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -33,7 +31,7 @@ p {
 }
 
 .content {
-  background-color: #b0c4de; /* Light steel blue */
+  background-color: #b0c4de;
   padding: 15px;
   border-radius: 8px;
   width: 80%;
@@ -46,11 +44,11 @@ p {
 
 .message {
   font-size: 1.5rem;
-  color: #4b0082; /* Indigo */
+  color: #4b0082;
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
-  background-color: #dcd0ff; /* Light lavender with a hint of blue */
+  background-color: #dcd0ff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -61,7 +59,7 @@ p {
   justify-content: center;
   width: 80%;
   padding: 20px;
-  background-color: #f0f8ff; /* Alice blue */
+  background-color: #f0f8ff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -69,7 +67,7 @@ p {
 input[type="text"] {
   font-size: 1.2rem;
   padding: 10px;
-  border: 2px solid #8a2be2; /* Blue violet */
+  border: 2px solid #8a2be2;
   border-radius: 5px;
   outline: none;
   width: 100%;
@@ -78,11 +76,11 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  border-color: #7b68ee; /* Medium slate blue */
+  border-color: #7b68ee;
 }
 
 button {
-  background-color: #4169e1; /* Royal blue */
+  background-color: #4169e1;
   color: #fff;
   font-size: 1rem;
   padding: 10px 20px;
@@ -93,29 +91,28 @@ button {
 }
 
 button:hover {
-  background-color: #5f9ea0; /* Cadet blue */
+  background-color: #5f9ea0;
 }
 
 .highlight {
-  background-color: #dda0dd; /* Plum */
+  background-color: #dda0dd;
   border-radius: 3px;
 }
 
 .error {
-  background-color: #f08080; /* Light coral */
+  background-color: #f08080;
   border: 2px solid #c00;
 }
 
-/* Modal background */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
-  z-index: 1; /* Sits on top */
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
   justify-content: center;
 }
@@ -131,22 +128,21 @@ button:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Close button */
 .close-button {
   float: right;
   font-size: 1.5rem;
   font-weight: bold;
   cursor: pointer;
-  color: #4b0082; /* Indigo */
+  color: #4b0082;
 }
 
 .close-button:hover {
-  color: #ff0000; /* Red on hover */
+  color: #ff0000;
 }
 
 button#restart-button {
   margin-top: 20px;
-  background-color: #4169e1; /* Royal blue */
+  background-color: #4169e1;
   color: #fff;
   font-size: 1rem;
   padding: 10px 20px;
@@ -157,7 +153,7 @@ button#restart-button {
 }
 
 button#restart-button:hover {
-  background-color: #5f9ea0; /* Cadet blue */
+  background-color: #5f9ea0;
 }
 
 /* 단어 전환 시 애니메이션 */
@@ -168,17 +164,17 @@ button#restart-button:hover {
 /* 애니메이션 키프레임 */
 @keyframes wordTransition {
   0% {
-    background-color: #e6e6fa; /* Light lavender background */
-    box-shadow: 0 0 5px #4b0082, 0 0 10px #4b0082; /* Indigo glow */
+    background-color: #e6e6fa;
+    box-shadow: 0 0 5px #4b0082, 0 0 10px #4b0082;
     transform: scale(1.05);
   }
   50% {
-    background-color: #dda0dd; /* Plum */
-    box-shadow: 0 0 10px #dda0dd, 0 0 15px #dda0dd; /* Soft plum glow */
+    background-color: #dda0dd;
+    box-shadow: 0 0 10px #dda0dd, 0 0 15px #dda0dd;
     transform: scale(1.1);
   }
   100% {
-    background-color: #e6e6fa; /* Return to Light lavender */
+    background-color: #e6e6fa;
     box-shadow: 0 0 5px #4b0082, 0 0 10px #4b0082;
     transform: scale(1);
   }
