@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>포켓몬 탐색기</title>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>포켓몬 탐색기</h1>
+    </header>
+    <main>
+      <div class="search-container">
+        <input id="search-input" type="text" placeholder="포켓몬 이름을 입력하세요..." />
+        <button id="search-btn" class="btn-primary">검색</button>
+        <button id="random-btn" class="btn-secondary">랜덤</button>
+      </div>
+      <section id="result" class="hidden">
+        <div class="card main-card">
+          <img id="pokemon-img" src="" alt="포켓몬 이미지" />
+          <h2 id="pokemon-name"></h2>
+          <p id="pokemon-classification"></p>
+          <p id="pokemon-color"></p>
+        </div>
+        <div class="card">
+          <h3>기본 정보</h3>
+          <p id="pokemon-weight-height"></p>
+          <div id="pokemon-gender"></div>
+        </div>
+        <div class="card">
+          <h3>타입</h3>
+          <p id="pokemon-types"></p>
+        </div>
+        <div class="card">
+          <h3>능력치</h3>
+          <ul id="pokemon-stats"></ul>
+        </div>
+        <div class="card">
+          <h3>포켓몬 설명</h3>
+          <p id="pokemon-flavor"></p>
+        </div>
+        <div class="card evolutions-card">
+          <h3>진화 정보</h3>
+          <ul id="pokemon-evolutions"></ul>
+        </div>
+      </section>
+      <section id="history">
+        <h2>최근 검색</h2>
+        <ul id="history-list"></ul>
+      </section>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
